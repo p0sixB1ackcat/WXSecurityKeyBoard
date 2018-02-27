@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D61C7F221D78344E0053C247 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D61C7F211D78344E0053C247 /* main.m */; };
+		D61C7F251D78344E0053C247 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D61C7F241D78344E0053C247 /* AppDelegate.m */; };
+		D61C7F281D78344E0053C247 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61C7F271D78344E0053C247 /* ViewController.m */; };
+		D61C7F2B1D78344E0053C247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61C7F291D78344E0053C247 /* Main.storyboard */; };
+		D61C7F2D1D78344E0053C247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61C7F2C1D78344E0053C247 /* Assets.xcassets */; };
+		D61C7F301D78344E0053C247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61C7F2E1D78344E0053C247 /* LaunchScreen.storyboard */; };
+		D6677F2C1D7EAAA8005EF277 /* WXSecKeyBoardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D6677F2B1D7EAAA8005EF277 /* WXSecKeyBoardUtils.m */; };
+		D6AE11811D7E70E7005833FC /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AE11801D7E70E7005833FC /* openssl.framework */; };
+		D6E2D7FA1D7D215A00B894B1 /* trade.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6E2D7F21D7D215A00B894B1 /* trade.bundle */; };
+		D6E2D7FB1D7D215A00B894B1 /* WXSecInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E2D7F51D7D215A00B894B1 /* WXSecInputView.m */; };
+		D6E2D7FC1D7D215A00B894B1 /* WXSecKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E2D7F71D7D215A00B894B1 /* WXSecKeyBoard.m */; };
+		D6E2D7FD1D7D215A00B894B1 /* WXSecKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E2D7F91D7D215A00B894B1 /* WXSecKeyBoardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D61C7F371D78344E0053C247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61C7F151D78344E0053C247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D61C7F1C1D78344E0053C247;
+			remoteInfo = WXSecurityKeyBoardDemo;
+		};
+		D61C7F421D78344E0053C247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61C7F151D78344E0053C247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D61C7F1C1D78344E0053C247;
+			remoteInfo = WXSecurityKeyBoardDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D61C7F1D1D78344E0053C247 /* WXSecurityKeyBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXSecurityKeyBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61C7F211D78344E0053C247 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D61C7F231D78344E0053C247 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D61C7F241D78344E0053C247 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D61C7F261D78344E0053C247 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D61C7F271D78344E0053C247 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D61C7F2A1D78344E0053C247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D61C7F2C1D78344E0053C247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D61C7F2F1D78344E0053C247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D61C7F311D78344E0053C247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61C7F361D78344E0053C247 /* WXSecurityKeyBoardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXSecurityKeyBoardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61C7F411D78344E0053C247 /* WXSecurityKeyBoardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXSecurityKeyBoardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6677F2A1D7EAAA8005EF277 /* WXSecKeyBoardUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSecKeyBoardUtils.h; sourceTree = "<group>"; };
+		D6677F2B1D7EAAA8005EF277 /* WXSecKeyBoardUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSecKeyBoardUtils.m; sourceTree = "<group>"; };
+		D6ADDB211D794B7600C72235 /* WXSecKeyBoardDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSecKeyBoardDemo.pch; sourceTree = "<group>"; };
+		D6AE11801D7E70E7005833FC /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openssl.framework; sourceTree = "<group>"; };
+		D6E2D7F21D7D215A00B894B1 /* trade.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = trade.bundle; sourceTree = "<group>"; };
+		D6E2D7F31D7D215A00B894B1 /* WXKeyBoardAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXKeyBoardAPI.h; sourceTree = "<group>"; };
+		D6E2D7F41D7D215A00B894B1 /* WXSecInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSecInputView.h; sourceTree = "<group>"; };
+		D6E2D7F51D7D215A00B894B1 /* WXSecInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSecInputView.m; sourceTree = "<group>"; };
+		D6E2D7F61D7D215A00B894B1 /* WXSecKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSecKeyBoard.h; sourceTree = "<group>"; };
+		D6E2D7F71D7D215A00B894B1 /* WXSecKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSecKeyBoard.m; sourceTree = "<group>"; };
+		D6E2D7F81D7D215A00B894B1 /* WXSecKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSecKeyBoardView.h; sourceTree = "<group>"; };
+		D6E2D7F91D7D215A00B894B1 /* WXSecKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSecKeyBoardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D61C7F1A1D78344E0053C247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6AE11811D7E70E7005833FC /* openssl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61C7F331D78344E0053C247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61C7F3E1D78344E0053C247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D61C7F141D78344E0053C247 = {
+			isa = PBXGroup;
+			children = (
+				D61C7F1F1D78344E0053C247 /* WXSecurityKeyBoardDemo */,
+				D61C7F1E1D78344E0053C247 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D61C7F1E1D78344E0053C247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D61C7F1D1D78344E0053C247 /* WXSecurityKeyBoardDemo.app */,
+				D61C7F361D78344E0053C247 /* WXSecurityKeyBoardDemoTests.xctest */,
+				D61C7F411D78344E0053C247 /* WXSecurityKeyBoardDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D61C7F1F1D78344E0053C247 /* WXSecurityKeyBoardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D6E2D7F11D7D215A00B894B1 /* keyBoard */,
+				D61C7F231D78344E0053C247 /* AppDelegate.h */,
+				D61C7F241D78344E0053C247 /* AppDelegate.m */,
+				D61C7F261D78344E0053C247 /* ViewController.h */,
+				D61C7F271D78344E0053C247 /* ViewController.m */,
+				D6ADDB211D794B7600C72235 /* WXSecKeyBoardDemo.pch */,
+				D61C7F291D78344E0053C247 /* Main.storyboard */,
+				D61C7F2C1D78344E0053C247 /* Assets.xcassets */,
+				D61C7F2E1D78344E0053C247 /* LaunchScreen.storyboard */,
+				D61C7F311D78344E0053C247 /* Info.plist */,
+				D61C7F201D78344E0053C247 /* Supporting Files */,
+			);
+			path = WXSecurityKeyBoardDemo;
+			sourceTree = "<group>";
+		};
+		D61C7F201D78344E0053C247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D61C7F211D78344E0053C247 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6AE11821D7E91C9005833FC /* keys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = keys;
+			sourceTree = "<group>";
+		};
+		D6E2D7F11D7D215A00B894B1 /* keyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D6AE11821D7E91C9005833FC /* keys */,
+				D6AE11801D7E70E7005833FC /* openssl.framework */,
+				D6E2D7F21D7D215A00B894B1 /* trade.bundle */,
+				D6E2D7F31D7D215A00B894B1 /* WXKeyBoardAPI.h */,
+				D6E2D7F41D7D215A00B894B1 /* WXSecInputView.h */,
+				D6E2D7F51D7D215A00B894B1 /* WXSecInputView.m */,
+				D6E2D7F61D7D215A00B894B1 /* WXSecKeyBoard.h */,
+				D6E2D7F71D7D215A00B894B1 /* WXSecKeyBoard.m */,
+				D6E2D7F81D7D215A00B894B1 /* WXSecKeyBoardView.h */,
+				D6E2D7F91D7D215A00B894B1 /* WXSecKeyBoardView.m */,
+				D6677F2A1D7EAAA8005EF277 /* WXSecKeyBoardUtils.h */,
+				D6677F2B1D7EAAA8005EF277 /* WXSecKeyBoardUtils.m */,
+			);
+			path = keyBoard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D61C7F1C1D78344E0053C247 /* WXSecurityKeyBoardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61C7F4A1D78344E0053C247 /* Build configuration list for PBXNativeTarget "WXSecurityKeyBoardDemo" */;
+			buildPhases = (
+				D61C7F191D78344E0053C247 /* Sources */,
+				D61C7F1A1D78344E0053C247 /* Frameworks */,
+				D61C7F1B1D78344E0053C247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WXSecurityKeyBoardDemo;
+			productName = WXSecurityKeyBoardDemo;
+			productReference = D61C7F1D1D78344E0053C247 /* WXSecurityKeyBoardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D61C7F351D78344E0053C247 /* WXSecurityKeyBoardDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61C7F4D1D78344E0053C247 /* Build configuration list for PBXNativeTarget "WXSecurityKeyBoardDemoTests" */;
+			buildPhases = (
+				D61C7F321D78344E0053C247 /* Sources */,
+				D61C7F331D78344E0053C247 /* Frameworks */,
+				D61C7F341D78344E0053C247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D61C7F381D78344E0053C247 /* PBXTargetDependency */,
+			);
+			name = WXSecurityKeyBoardDemoTests;
+			productName = WXSecurityKeyBoardDemoTests;
+			productReference = D61C7F361D78344E0053C247 /* WXSecurityKeyBoardDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D61C7F401D78344E0053C247 /* WXSecurityKeyBoardDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61C7F501D78344E0053C247 /* Build configuration list for PBXNativeTarget "WXSecurityKeyBoardDemoUITests" */;
+			buildPhases = (
+				D61C7F3D1D78344E0053C247 /* Sources */,
+				D61C7F3E1D78344E0053C247 /* Frameworks */,
+				D61C7F3F1D78344E0053C247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D61C7F431D78344E0053C247 /* PBXTargetDependency */,
+			);
+			name = WXSecurityKeyBoardDemoUITests;
+			productName = WXSecurityKeyBoardDemoUITests;
+			productReference = D61C7F411D78344E0053C247 /* WXSecurityKeyBoardDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D61C7F151D78344E0053C247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = WuXian;
+				TargetAttributes = {
+					D61C7F1C1D78344E0053C247 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4SK4K45JGW;
+					};
+					D61C7F351D78344E0053C247 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D61C7F1C1D78344E0053C247;
+					};
+					D61C7F401D78344E0053C247 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D61C7F1C1D78344E0053C247;
+					};
+				};
+			};
+			buildConfigurationList = D61C7F181D78344E0053C247 /* Build configuration list for PBXProject "WXSecurityKeyBoardDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D61C7F141D78344E0053C247;
+			productRefGroup = D61C7F1E1D78344E0053C247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D61C7F1C1D78344E0053C247 /* WXSecurityKeyBoardDemo */,
+				D61C7F351D78344E0053C247 /* WXSecurityKeyBoardDemoTests */,
+				D61C7F401D78344E0053C247 /* WXSecurityKeyBoardDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D61C7F1B1D78344E0053C247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E2D7FA1D7D215A00B894B1 /* trade.bundle in Resources */,
+				D61C7F301D78344E0053C247 /* LaunchScreen.storyboard in Resources */,
+				D61C7F2D1D78344E0053C247 /* Assets.xcassets in Resources */,
+				D61C7F2B1D78344E0053C247 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61C7F341D78344E0053C247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61C7F3F1D78344E0053C247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D61C7F191D78344E0053C247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E2D7FB1D7D215A00B894B1 /* WXSecInputView.m in Sources */,
+				D61C7F281D78344E0053C247 /* ViewController.m in Sources */,
+				D61C7F251D78344E0053C247 /* AppDelegate.m in Sources */,
+				D61C7F221D78344E0053C247 /* main.m in Sources */,
+				D6E2D7FD1D7D215A00B894B1 /* WXSecKeyBoardView.m in Sources */,
+				D6677F2C1D7EAAA8005EF277 /* WXSecKeyBoardUtils.m in Sources */,
+				D6E2D7FC1D7D215A00B894B1 /* WXSecKeyBoard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61C7F321D78344E0053C247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61C7F3D1D78344E0053C247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D61C7F381D78344E0053C247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D61C7F1C1D78344E0053C247 /* WXSecurityKeyBoardDemo */;
+			targetProxy = D61C7F371D78344E0053C247 /* PBXContainerItemProxy */;
+		};
+		D61C7F431D78344E0053C247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D61C7F1C1D78344E0053C247 /* WXSecurityKeyBoardDemo */;
+			targetProxy = D61C7F421D78344E0053C247 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D61C7F291D78344E0053C247 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61C7F2A1D78344E0053C247 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D61C7F2E1D78344E0053C247 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61C7F2F1D78344E0053C247 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D61C7F481D78344E0053C247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D61C7F491D78344E0053C247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D61C7F4B1D78344E0053C247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4SK4K45JGW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WXSecurityKeyBoardDemo/keyBoard",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WXSecurityKeyBoardDemo/WXSecKeyBoardDemo.pch";
+				INFOPLIST_FILE = WXSecurityKeyBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buybal.www.WXSecurityKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D61C7F4C1D78344E0053C247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4SK4K45JGW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WXSecurityKeyBoardDemo/keyBoard",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WXSecurityKeyBoardDemo/WXSecKeyBoardDemo.pch";
+				INFOPLIST_FILE = WXSecurityKeyBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buybal.www.WXSecurityKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D61C7F4E1D78344E0053C247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WXSecurityKeyBoardDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buybal.www.WXSecurityKeyBoardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WXSecurityKeyBoardDemo.app/WXSecurityKeyBoardDemo";
+			};
+			name = Debug;
+		};
+		D61C7F4F1D78344E0053C247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WXSecurityKeyBoardDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buybal.www.WXSecurityKeyBoardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WXSecurityKeyBoardDemo.app/WXSecurityKeyBoardDemo";
+			};
+			name = Release;
+		};
+		D61C7F511D78344E0053C247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WXSecurityKeyBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buybal.www.WXSecurityKeyBoardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WXSecurityKeyBoardDemo;
+			};
+			name = Debug;
+		};
+		D61C7F521D78344E0053C247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WXSecurityKeyBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buybal.www.WXSecurityKeyBoardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WXSecurityKeyBoardDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D61C7F181D78344E0053C247 /* Build configuration list for PBXProject "WXSecurityKeyBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61C7F481D78344E0053C247 /* Debug */,
+				D61C7F491D78344E0053C247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D61C7F4A1D78344E0053C247 /* Build configuration list for PBXNativeTarget "WXSecurityKeyBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61C7F4B1D78344E0053C247 /* Debug */,
+				D61C7F4C1D78344E0053C247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D61C7F4D1D78344E0053C247 /* Build configuration list for PBXNativeTarget "WXSecurityKeyBoardDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61C7F4E1D78344E0053C247 /* Debug */,
+				D61C7F4F1D78344E0053C247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D61C7F501D78344E0053C247 /* Build configuration list for PBXNativeTarget "WXSecurityKeyBoardDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61C7F511D78344E0053C247 /* Debug */,
+				D61C7F521D78344E0053C247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D61C7F151D78344E0053C247 /* Project object */;
+}

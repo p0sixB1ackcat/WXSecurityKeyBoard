@@ -1,0 +1,17 @@
+//
+//  WXSecKeyBoardDemo.pch
+//  WXSecurityKeyBoardDemo
+//
+//  Created by WuXian on 16/9/2.
+//  Copyright © 2016年 WuXian. All rights reserved.
+//
+
+#ifndef WXSecKeyBoardDemo_pch
+#define WXSecKeyBoardDemo_pch
+
+#define WXSecKeyBoardRSAPublicKey @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCkOYavHF1qYk6dV4x9wA6aUhBW6tkU5M6zysI0xr6jJ1/Ld5rQ5lSHV+7M1qleeNO32/dtLBI1uUYaKt+/RtcHCgv3/uqDShsD+1HOYSjO8XMBIxHrZIBk/uZo1+F6cV4ItGcZvHnELd1pDO7+quUwFub5zaw/jEYeEo0ZO328cwIDAQAB"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* WXSecKeyBoardDemo_pch */
