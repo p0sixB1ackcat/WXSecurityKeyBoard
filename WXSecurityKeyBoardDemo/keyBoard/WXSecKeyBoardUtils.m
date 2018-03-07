@@ -92,7 +92,7 @@
 {
     NSMutableString * result = [NSMutableString string];
     
-    [result appendString:@"-----BEGIAN PUBLIC KEY-----\n"];
+    [result appendString:@"-----BEGIN PUBLIC KEY-----\n"];
     
     int index = 0;
     int count = 0;
@@ -116,7 +116,7 @@
     
     [result appendString:@"\n-----END PUBLIC KEY-----"];
     
-    NSString * pubKeyPath = [NSString stringWithFormat:@"%@/WXPublicKey.pem",HOMEPATH];
+    NSString * pubKeyPath = [NSString stringWithFormat:@"%@/WXPublicKey.key",HOMEPATH];
     if([[NSFileManager defaultManager] fileExistsAtPath:pubKeyPath])
     {
         return -1;
@@ -168,14 +168,14 @@
 + (void)removeHomeKeyPath
 {
     NSString * keyPath = [NSString stringWithFormat:@"%@/%@",HOMEPATH,PRIVATEKEYNAME];
-    NSString * pubkeyPath = [NSString stringWithFormat:@"%@/WXPublicKey.pem",HOMEPATH];
+    NSString * pubkeyPath = [NSString stringWithFormat:@"%@/WXPublicKey.key",HOMEPATH];
     unlink([keyPath UTF8String]);
     unlink([pubkeyPath UTF8String]);
 }
 
 + (NSString *)encryptRSA:(NSString *)content
 {
-    NSMutableString * encrypt = [NSMutableString string];
+    NSMutableString * encrypt = nil;
     
     FILE * file = fopen(PRIVATEKEYPATH, "r");
     if(file == NULL)
@@ -202,11 +202,15 @@
         encrypt = nil;
         goto ret;
     }
-    
-    for(int i = 0;i < RSA_size(rsa);i++)
     {
-        [encrypt appendFormat:@"%02X",outputbuffer[i]];
+        NSData *data = [NSData dataWithBytes:outputbuffer length:RSA_size(rsa)];
+        data = [data base64EncodedDataWithOptions:0];
+        encrypt = [[NSMutableString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
+//    for(int i = 0;i < RSA_size(rsa);i++)
+//    {
+//        [encrypt appendFormat:@"%02X",outputbuffer[i]];
+//    }
     
 ret:
     free(outputbuffer);
@@ -220,13 +224,15 @@ ret:
 {
     NSMutableString * decrypt = [NSMutableString string];
     
-    NSString * pubKeyPath = [NSString stringWithFormat:@"%@/WXPublicKey.pem",HOMEPATH];
+    NSString * pubKeyPath = [NSString stringWithFormat:@"%@/WXPublicKey.key",HOMEPATH];
     
     FILE * file = fopen([pubKeyPath cStringUsingEncoding:NSASCIIStringEncoding], "r");
     
-    int encryptDataLen = (int)encrypt.length * 2;
-    unsigned char  encryptData[encryptDataLen];
-    hextochar([encrypt UTF8String], encryptData, encrypt.length, 16);
+    unsigned char *encryptData = NULL;
+    
+    //hextochar([encrypt UTF8String], encryptData, encrypt.length, 16);
+    encryptData = (unsigned char *)[[[NSData alloc] initWithBase64EncodedString:encrypt options:NSDataBase64DecodingIgnoreUnknownCharacters] bytes];
+    
     if(file == NULL)
     {
         perror("fopen");

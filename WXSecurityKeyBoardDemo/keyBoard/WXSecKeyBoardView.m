@@ -199,7 +199,10 @@
     [WXSecKeyBoardUtils initializePrivate:nil];
     [WXSecKeyBoardUtils initializPublicKey:WXSecKeyBoardRSAPublicKey];
     
-    NSLog(@"解密数据 == %@",[WXSecKeyBoardUtils decryptRSA:[WXSecKeyBoardUtils encryptRSA:@"123"]]);
+    NSString *encstr = [WXSecKeyBoardUtils encryptRSA:pwd];
+    NSLog(@"加密键盘记录:%@",encstr);
+    NSString *decstr = [WXSecKeyBoardUtils decryptRSA:encstr];
+    NSLog(@"解密键盘记录 == %@",decstr);
     
     [WXSecKeyBoardUtils removeHomeKeyPath];
     
