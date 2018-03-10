@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFDEBECA205440FB009F2F7F /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDEBEC9205440FB009F2F7F /* openssl.framework */; };
 		D61C7F221D78344E0053C247 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D61C7F211D78344E0053C247 /* main.m */; };
 		D61C7F251D78344E0053C247 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D61C7F241D78344E0053C247 /* AppDelegate.m */; };
 		D61C7F281D78344E0053C247 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61C7F271D78344E0053C247 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		D61C7F2D1D78344E0053C247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61C7F2C1D78344E0053C247 /* Assets.xcassets */; };
 		D61C7F301D78344E0053C247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61C7F2E1D78344E0053C247 /* LaunchScreen.storyboard */; };
 		D6677F2C1D7EAAA8005EF277 /* WXSecKeyBoardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D6677F2B1D7EAAA8005EF277 /* WXSecKeyBoardUtils.m */; };
-		D6AE11811D7E70E7005833FC /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AE11801D7E70E7005833FC /* openssl.framework */; };
 		D6E2D7FA1D7D215A00B894B1 /* trade.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6E2D7F21D7D215A00B894B1 /* trade.bundle */; };
 		D6E2D7FB1D7D215A00B894B1 /* WXSecInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E2D7F51D7D215A00B894B1 /* WXSecInputView.m */; };
 		D6E2D7FC1D7D215A00B894B1 /* WXSecKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E2D7F71D7D215A00B894B1 /* WXSecKeyBoard.m */; };
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CFDEBEC9205440FB009F2F7F /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = ../../../p0sixSoft/PBCEncrypt/openssl.framework; sourceTree = "<group>"; };
 		D61C7F1D1D78344E0053C247 /* WXSecurityKeyBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXSecurityKeyBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61C7F211D78344E0053C247 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D61C7F231D78344E0053C247 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		D6677F2A1D7EAAA8005EF277 /* WXSecKeyBoardUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSecKeyBoardUtils.h; sourceTree = "<group>"; };
 		D6677F2B1D7EAAA8005EF277 /* WXSecKeyBoardUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSecKeyBoardUtils.m; sourceTree = "<group>"; };
 		D6ADDB211D794B7600C72235 /* WXSecKeyBoardDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSecKeyBoardDemo.pch; sourceTree = "<group>"; };
-		D6AE11801D7E70E7005833FC /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openssl.framework; sourceTree = "<group>"; };
 		D6E2D7F21D7D215A00B894B1 /* trade.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = trade.bundle; sourceTree = "<group>"; };
 		D6E2D7F31D7D215A00B894B1 /* WXKeyBoardAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXKeyBoardAPI.h; sourceTree = "<group>"; };
 		D6E2D7F41D7D215A00B894B1 /* WXSecInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSecInputView.h; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6AE11811D7E70E7005833FC /* openssl.framework in Frameworks */,
+				CFDEBECA205440FB009F2F7F /* openssl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +145,8 @@
 		D6E2D7F11D7D215A00B894B1 /* keyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				CFDEBEC9205440FB009F2F7F /* openssl.framework */,
 				D6AE11821D7E91C9005833FC /* keys */,
-				D6AE11801D7E70E7005833FC /* openssl.framework */,
 				D6E2D7F21D7D215A00B894B1 /* trade.bundle */,
 				D6E2D7F31D7D215A00B894B1 /* WXKeyBoardAPI.h */,
 				D6E2D7F41D7D215A00B894B1 /* WXSecInputView.h */,
@@ -444,9 +444,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/WXSecurityKeyBoardDemo/keyBoard",
+					"/Volumes/Transcend/MEGAsync/mycomputer/Apple开发/ObjectC-file/code/p0sixSoft/PBCEncrypt",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WXSecurityKeyBoardDemo/WXSecKeyBoardDemo.pch";
+				HEADER_SEARCH_PATHS = "/Volumes/Transcend/MEGAsync/mycomputer/Apple开发/ObjectC-file/code/p0sixSoft/PBCEncrypt/openssl.framework/Headers";
 				INFOPLIST_FILE = WXSecurityKeyBoardDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -463,9 +464,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/WXSecurityKeyBoardDemo/keyBoard",
+					"/Volumes/Transcend/MEGAsync/mycomputer/Apple开发/ObjectC-file/code/p0sixSoft/PBCEncrypt",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WXSecurityKeyBoardDemo/WXSecKeyBoardDemo.pch";
+				HEADER_SEARCH_PATHS = "/Volumes/Transcend/MEGAsync/mycomputer/Apple开发/ObjectC-file/code/p0sixSoft/PBCEncrypt/openssl.framework/Headers";
 				INFOPLIST_FILE = WXSecurityKeyBoardDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
